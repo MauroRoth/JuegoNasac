@@ -1,0 +1,35 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block contenido %}
+	<center><div>
+		<h1 class="text-center my-4"> 
+		<span class="badge badge-info">
+			Los 10 mejores jugadores NASAQUISTAS!!!
+		</span>
+	</h1>
+	<p><h2 class="parrafo">
+	<table class="table table-striped table-bodered">
+		<thead>
+			<tr>
+				<td><th>Usuario</th></td>
+				<td><th>Puntaje</th></td>
+			</tr>
+		</thead>
+		<tbody>
+			{% for r in ranking %}
+				<tr>
+					<td></td><th>{{r.usuario}}</th></td>
+					<td></td><th>{{r.puntaje}}</th>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table></h2>
+	</p>
+	</div></center>
+	
+	
+{% endblock contenido %}
+

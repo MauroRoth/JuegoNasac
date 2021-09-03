@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block contenido %}
+<center><h1 class="parrafo">{{preguntas.pregunta}}</h1><br><br>
+	<form method="POST" action="{% url 'juego:respuesta' juego.id %}"> {% csrf_token %}
+		<h3 class="parrafo"><label><input type="checkbox" name="{{preguntas.respuesta1}}" value="{{preguntas.respuesta1}}">{{preguntas.respuesta1}}</label></h3><br>
+
+		<h3 class="parrafo"><label><input type="checkbox" name="{{preguntas.respuesta2}}" value="{{preguntas.respuesta2}}">{{preguntas.respuesta2}}</label></h3><br>
+
+		<h3 class="parrafo"><label><input type="checkbox" name="{{preguntas.respuesta3}}" value="{{preguntas.respuesta3}}">{{preguntas.respuesta3}}</label></h3><br>
+	
+		<button type="submit" class="button">enviar</button>
+		<input type="text" name="id_pregunta" value="{{preguntas.id}}" hidden="">
+	</form>
+</center>
+
+{% endblock contenido %}
+
+ 
+
+

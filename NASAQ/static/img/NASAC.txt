@@ -1,0 +1,13 @@
+Home=
+
+'En el año 2021, en el curso INFORMATORIO, sobre programación web; se desarrolla el juego NASAC
+ (lengua de origen QOM, cuyo significado invita a jugar; con la implicancia que tiene en los 70
+ aniversarios de la creación de la provincia, a modo de aporte o una forma más de reconocieminto
+ a nuestros hermanos originarios de nuestro suelo.)
+ En esta página se pondrá a prueba su conocimiento sobre la provincia a través del juego,
+ de manera lúdica siendo una invitación a conocer nuestras raices provinciales, culturales
+ y coso... encajále si catú'
+'Para jugar simplemente regístrese, luego avance en el juego y el conocimiento de nuestra provincia'
+
+
+

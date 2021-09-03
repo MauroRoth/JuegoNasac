@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}Creando una Cuenta{% endblock %}
+{% load crispy_forms_tags %}
+{% block contenido %}
+	<h1>Registro</h1>
+
+	<form method="POST" class="form-group">{% csrf_token %}
+	  <center>{{form.errors}}</center>
+	  <center>{{ form|crispy }}</center>
+	  <center><input type="submit" class="btn btn-success" name="enviar" value="Guardar"></center>
+	</form>
+
+		
+		
+{% endblock contenido %}

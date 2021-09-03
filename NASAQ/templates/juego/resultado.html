@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block contenido %}
+	<center><div>
+		<h1>{{mensaje}}</h1>
+		<a href="{% url 'juego:siguiente' juego.id %}"> 
+		<button type="submit" class="button"> 
+			SIGUIENTE
+		</button>
+	</a>
+	</div></center>
+	
+
+{% endblock contenido %}

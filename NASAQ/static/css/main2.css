@@ -1,0 +1,17 @@
+
+
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    /*background-color: hsla(0, 70%, 20%, .25);*/
+    
+    /*background-image: linear-gradient(180deg, #ffffff 0, #fcfbfb 25%, #e0e9eb 50%, #c4d7db 75%, #acc7ce 100%);*/
+    /*background-image: (static/img/algodondino.jpg);*/
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

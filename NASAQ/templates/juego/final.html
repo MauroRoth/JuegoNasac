@@ -1,0 +1,18 @@
+
+{% extends 'base.html' %}
+{% load static %}
+	
+
+{% block contenido %}
+	<center><div>
+		<h2>Tu puntaje final es: {{juego.puntaje}}</h2>
+		<a href="{% url 'juego:ranking' %}"> 
+		<button type="submit" class="button"> 
+			RANKING
+		</button>
+	</a>
+	</div></center>
+	
+	
+
+{% endblock contenido %}

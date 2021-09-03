@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contenido %}
+	<br><br><br><br><br>
+	
+	<div>
+		<form method="POST"> {% csrf_token %}
+			{{form.errors}}
+			<center><input type="text" name="username" placeholder="USUARIO"></center> <br>
+			<center><input type="password" name="password" placeholder="CONTRASEÑA"></center> <br>
+
+			<center><input type="submit" name="" value="LOGIN"></center>
+			<center><a href="{% url 'registro' %}" class="regLogin"><h3>Crear Usuario</h3></a></center>
+		</form>
+	</div>
+	
+{% endblock contenido %}

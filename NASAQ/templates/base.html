@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>N A S A C</title>
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/principal.css' %}"> 
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}">
+ 
+  </head>
+
+
+ <body>
+    <header>
+     
+      <nav>
+        <ul>
+            
+            <li><a href="{% url 'home' %}"><h2>INCIO</h2></a></li>
+            <li><a href="{% url 'nosotros' %}"><h2>NOSOTROS</h2></a></li>
+
+            {% if user.is_authenticated %}
+                <li><a href="{% url 'juego' %}"><h2>JUEGO</h2></a></li>
+                
+                <li><img src="{% static 'img/favicon3.png' %}" alt="logo NASAC" width="80%" align="center"></li>
+                <li>      </li>
+                <li><a href="{% url 'home' %}"><h2>{{user.username}}</h2></a></li>
+                <li><a href="{% url 'logout' %}"><h2>SALIR</h2></a></li>
+            {% else %}
+                <li><a href="{% url 'login' %}"><h2>JUEGO</h2></a></li>
+                
+                <li><img src="{% static 'img/favicon3.png' %}" alt="logo NASAC" width="80%" align="center"></li>
+                <li>      </li>
+                <li><a href="{% url 'login' %}"><h2>ENTRAR</h2></a></li>
+                <li><a href="{% url 'registro' %}"><h2>REGISTRO</h2></a></li>
+            {% endif %}
+        </ul>
+      </nav>
+    </header>
+
+   
+        <div>
+              {% block contenido %}
+  
+              {% endblock contenido %} 
+        </div>
+       
+      
+  </body>
+
+</html>

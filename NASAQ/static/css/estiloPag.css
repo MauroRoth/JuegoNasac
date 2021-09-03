@@ -1,0 +1,81 @@
+
+.about{
+    color: #000;
+
+}
+#nosotros{
+    color: #000;
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    background-image: linear-gradient(180deg, #ffffff 0, #fcfbfb 25%, #e0e9eb 50%, #c4d7db 75%, #acc7ce 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+
+form label {
+    margin: 10px 0 10px 2px;
+    color: #fff;
+}
+
+.form-item {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+textarea::placeholder {
+    padding-left: 4px;
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: 900;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.form-item input {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.submit-reset {
+    align-self: center;
+}
+
+.button {
+    margin: 20px;
+    background-color: #000000;
+    color: #fff;
+    padding: 15px;
+    width: 95px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 5px hsl(118, 88%, 6%);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 3%;
+    justify-content: center;
+    height: 100%;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 5rem;
+}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block contenido %}
+	
+	<center><h1>CATEGORIAS</h1></center>
+	
+	{% for p in categorias %}
+		<center>
+			<a href="{% url 'juego:jugar' p.id %}"><h2>{{p.nombre}}</h2></a>
+			<p>______________________</p></center>
+	{% endfor %}
+
+{% endblock contenido %}
+

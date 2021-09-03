@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+ {% block contenido %}    
+        <center>
+            <br><br><h1 class="parrafo">S o m o s :</h1>
+            <p> <h2 class="parrafo">
+            	Un grupo de curiosos en asuntos de la PROGRAMACIÓN, y hemos sido parte del INFORMATORIO 2021.<br><br>
+              Andrea MORINIGO - Resistencia.<br> 
+              Facundo RETAMOZO - Villa Ángela.<br>
+              Johana TITA FERREYRA -  Resistencia.<br>
+              Mauro Gonzalo ROTH - Sáenz Peña.<br>
+              Tatiana MIJALUK - Sáenz Peña.<br>
+              Christian PERALTA - Resistencia.<br>
+              Dino BARTOLONI - Sáenz Peña.<br>
+              Nicolas TORTOSA - Resistencia -guía espiritual y cognitivo-.</h2>
+            </p>
+        
+        <section class="contact" id="contact">
+
+            <form>
+                <h4 class="parrafo">Contactanos</h4>
+                <div class="form-item">
+                    <h5><label for="message"></label><textarea name="mensaje" id="message" cols="50" rows="10" placeholder="Dejanos tu mensaje"></textarea>
+                </div>
+                <div class="form-item">
+                    <label for="name"> Nombre: </label><input id="name" type="text" name="name"></div>
+                <div class="form-item">
+                    <label for="lastName"> Apellido: </label><input id="lastName" type="text" name="lastName">
+                </div>
+                <div class="form-item">
+                    <label for="email"> E-mail:  </label><input id="email" type="email" name="email">
+                </div>
+
+                <div class="submit-reset">
+                    <input type="submit" class="button" name="submit" value="Enviar">
+                    <input type="reset" class="button" name="cancel" value="Cancelar"></h5>
+                </div>
+            </form>
+        </section>             
+        </center>
+              {% endblock contenido %} 
+     

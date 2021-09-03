@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block contenido %}
+     <center><p>
+           <h2 class="parrafo">
+            Cuando acceda al botón inferior 'NASAC', encotrará una serie de trivias, definida por categorías, <br>
+            en total de 7. Cada una de ellas cuenta con 7 consignas y 3 respuestas probables.<br>ATENTO! <br>Solo una de ellas es la opción correcta, recorre las 7 preguntas de la categoría!<br> Cada consigna suma 10 puntos, valore su conocimiento sumando correctas y espíe el ranking final!<br><br>  Total máximo posible, por partida = 70 puntos.<br><br>      Total de años de nuestra provincia = 70 años.<br><br>          Vamos por más! <br><br>ÉXITOS!
+          </h2>    
+        </p></center>
+        
+         <center><a href="{% url 'categorias:categorias' %}"><button type="submit"class="button">NASAC</button></a></center>
+
+        
+{% endblock contenido %}
+
+
+
+
+             
+
+
+      	
+    

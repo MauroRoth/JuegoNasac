@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+  /*background-image: url(https://www.argentina.gob.ar/sites/default/files/ecosistema_pn_chaco.jpg);*/
+  background-image: url(../img/algodonfront1.jpg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+}
+ul {
+  /*outline: 1px solid blue;*/
+  list-style: none;
+  padding: 0;
+  color: #fff;
+  margin: 0;
+  line-height: 20px;
+  text-align: center;
+  
+}
+
+li {
+  /*outline: 1px solid red;*/
+  width: 150px;
+  display: inline-block;
+  text-align: center;
+  
+  
+}
+.nav {
+    float: right;
+    margin: 30px 15px;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+}
+
+a {
+  /*outline: 1px solid green;*/
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 40px;
+  text-shadow: 2px 2px 2px black; 
+
+}
+
+.button {
+    margin: 20px;
+    background-color: #000000;
+    color: #fff;
+    padding: 15px;
+    width: 95px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 5px hsl(118, 88%, 6%);
+}
+
+.parrafo {
+
+  text-shadow: 4px 4px 4px white;
+}
